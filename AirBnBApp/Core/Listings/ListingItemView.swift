@@ -9,28 +9,12 @@ import SwiftUI
 
 struct ListingItemView: View {
     
-    var images = [
-        "linsting-1",
-        "linsting-2",
-        "linsting-3",
-        "linsting-4",
-        "linsting-5",
-        "linsting-6",
-        "linsting-7",
-    ]
-    
     var body: some View {
         VStack(spacing: 8) {
             // images
-            TabView {
-                ForEach(images, id: \.self) { image in
-                    Image(image)
-                        .resizable()
-                }
-            }
+            ListingImageCarruselView()
             .frame(height: 300)
             .clipShape(RoundedRectangle(cornerRadius: 10))
-            .tabViewStyle(.page)
             
             // listing details
             HStack(alignment: .top) {
@@ -62,6 +46,7 @@ struct ListingItemView: View {
                 }
                 
             }
+            .foregroundStyle(.black)
         }
         .padding()
     }
