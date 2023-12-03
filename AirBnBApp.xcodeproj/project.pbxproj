@@ -17,6 +17,11 @@
 		6C818AF82AF69E0B00CD1630 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C818AF72AF69E0A00CD1630 /* ExploreView.swift */; };
 		6C818AFA2AF69EB900CD1630 /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C818AF92AF69EB900CD1630 /* ListingItemView.swift */; };
 		6C818AFE2AF6AE0600CD1630 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C818AFD2AF6AE0600CD1630 /* SearchAndFilterBar.swift */; };
+		6CA2C9792B1CE5FA0046EE17 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2C9782B1CE5FA0046EE17 /* ProfileView.swift */; };
+		6CA2C97B2B1CE7020046EE17 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2C97A2B1CE7020046EE17 /* ProfileOptionRowView.swift */; };
+		6CA2C97E2B1CE8A20046EE17 /* WhishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2C97D2B1CE8A20046EE17 /* WhishlistView.swift */; };
+		6CA2C9802B1CE9680046EE17 /* ButtonLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2C97F2B1CE9680046EE17 /* ButtonLoginView.swift */; };
+		6CA2C9822B1CEA470046EE17 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2C9812B1CEA470046EE17 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		6C818AF72AF69E0A00CD1630 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		6C818AF92AF69EB900CD1630 /* ListingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemView.swift; sourceTree = "<group>"; };
 		6C818AFD2AF6AE0600CD1630 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
+		6CA2C9782B1CE5FA0046EE17 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6CA2C97A2B1CE7020046EE17 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
+		6CA2C97D2B1CE8A20046EE17 /* WhishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhishlistView.swift; sourceTree = "<group>"; };
+		6CA2C97F2B1CE9680046EE17 /* ButtonLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLoginView.swift; sourceTree = "<group>"; };
+		6CA2C9812B1CEA470046EE17 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,7 @@
 		6C818AED2AF69D1900CD1630 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				6CA2C97C2B1CE8970046EE17 /* Whislist */,
 				6C45BD0A2AF9E59400D20CFE /* Components */,
 				6C818AF12AF69D4E00CD1630 /* Explore */,
 				6C818AF22AF69D5400CD1630 /* Listings */,
@@ -163,6 +174,8 @@
 		6C818AF42AF69D6700CD1630 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				6CA2C9782B1CE5FA0046EE17 /* ProfileView.swift */,
+				6CA2C97A2B1CE7020046EE17 /* ProfileOptionRowView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -177,8 +190,18 @@
 		6C818AF62AF69D7400CD1630 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				6CA2C9812B1CEA470046EE17 /* MainTabView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6CA2C97C2B1CE8970046EE17 /* Whislist */ = {
+			isa = PBXGroup;
+			children = (
+				6CA2C97D2B1CE8A20046EE17 /* WhishlistView.swift */,
+				6CA2C97F2B1CE9680046EE17 /* ButtonLoginView.swift */,
+			);
+			path = Whislist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C818AE12AF69C8E00CD1630 /* ContentView.swift in Sources */,
+				6CA2C9792B1CE5FA0046EE17 /* ProfileView.swift in Sources */,
+				6CA2C97E2B1CE8A20046EE17 /* WhishlistView.swift in Sources */,
+				6CA2C97B2B1CE7020046EE17 /* ProfileOptionRowView.swift in Sources */,
+				6CA2C9802B1CE9680046EE17 /* ButtonLoginView.swift in Sources */,
 				6C64EAA92B16344B00A7187B /* DestinationSearchView.swift in Sources */,
 				6C818AFA2AF69EB900CD1630 /* ListingItemView.swift in Sources */,
+				6CA2C9822B1CEA470046EE17 /* MainTabView.swift in Sources */,
 				6C818AF82AF69E0B00CD1630 /* ExploreView.swift in Sources */,
 				6C818AFE2AF6AE0600CD1630 /* SearchAndFilterBar.swift in Sources */,
 				6C45BD092AF9E53200D20CFE /* ListingDetailView.swift in Sources */,
