@@ -9,7 +9,8 @@ import SwiftUI
 import MapKit
 
 struct ListingDetailView: View {
-    @Environment(\.presentationMode) var presentatioMode
+    @Environment(\.dismiss) private var dismiss
+    
     let listing: Listing
     @State private var cameraPosition: MapCameraPosition
     
@@ -26,7 +27,7 @@ struct ListingDetailView: View {
                     .frame(height: 320)
                 
                 Button {
-                    presentatioMode.wrappedValue.dismiss()
+                    dismiss()
                 } label: {
                     Image(systemName: "chevron.left")
                         .foregroundStyle(.black)
